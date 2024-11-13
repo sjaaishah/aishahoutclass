@@ -3,6 +3,10 @@ import numpy as np
 import pandas as pd
 
 st.header("My first Streamlit App")
+
+option = st.sidebar.selectbox(
+    'Select a mini project',
+     ['line chart','map','T n C'])
 st.write(pd.DataFrame({
     'Students': ['John', 'Lofa', 'Siti', 'Amy'],
     'Attendance Status': ['yes', 'yes', 'yes', 'no']
